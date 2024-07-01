@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+header {
+    width: 100%;
+    background-color: #FF0000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+.menu-icon::before {
+    content: "\2630"; /* Unicode character for the three bars menu icon */
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin-top: 20px;
+    border: none;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    margin-bottom: 20px; /* Más espacio entre inputs */
+    padding: 15px; /* Inputs más grandes */
+    font-size: 18px; /* Texto más grande */
+    border: 1px solid #ccc;
+}
+button {
+    padding: 15px; /* Botón más grande */
+    font-size: 18px; /* Texto del botón más grande */
+    background-color: rgb(240, 240, 240); /* Color de fondo gris claro */
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px; /* Más espacio entre el último input y el botón */
+    border-radius: 8px; /* Esquinas redondeadas */
+}
+button:hover {
+    background-color: rgb(240, 240, 240);
+}
+h1 {
+    color: red;
+    margin-top: 80px; /* Añadir margen superior para evitar que el título quede oculto detrás del header */
+    font-size: 24px; /* Tamaño de fuente más pequeño */
+}
+.subtext {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    margin-top: -6px;
+}
+.image-container {
+    margin-top: 20px;
+}
+
